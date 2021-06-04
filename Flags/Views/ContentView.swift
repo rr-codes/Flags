@@ -17,8 +17,7 @@ extension Optional where Wrapped: View {
 struct ContentView: View {
     @State private var activeCountry: Country? = nil
     
-    let provider = FlagProvider()
-    
+    @StateObject var controller = FlagController(using: .init())
     
     var navigationLink: some View {
         NavigationLink(
@@ -37,12 +36,25 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            FlagViewController(activeCountry: $activeCountry, countries: provider.all)
+            List {
+                ForEach(controller.countries) { country in
+                    Section(header: Text(country.name.common)) {
+                        Button {
+                            activeCountry = country
+                        } label: {
+                            Image(country.flagImageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        }
+                        .listRowInsets(.init())
+                    }
+                }
+            }
             .navigationTitle("Flags")
             .listStyle(InsetGroupedListStyle())
             .toolbar {
                 Button {
-                   // controller.shuffle()
+                    controller.shuffle()
                 } label: {
                     Image(systemName: "shuffle")
                         .imageScale(.large)
