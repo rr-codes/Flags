@@ -13,6 +13,20 @@
 		07031F7D2663499900BBDEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07031F7C2663499900BBDEB1 /* Preview Assets.xcassets */; };
 		07031F882663499900BBDEB1 /* FlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031F872663499900BBDEB1 /* FlagsTests.swift */; };
 		07031F932663499900BBDEB1 /* FlagsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031F922663499900BBDEB1 /* FlagsUITests.swift */; };
+		07031FA226634E1900BBDEB1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031FA126634E1900BBDEB1 /* Country.swift */; };
+		07031FA526634F6D00BBDEB1 /* FlagProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031FA426634F6D00BBDEB1 /* FlagProvider.swift */; };
+		07031FAA26646BAE00BBDEB1 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031FA926646BAE00BBDEB1 /* FlagView.swift */; };
+		07622EF82664B2000054FB2E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07622EF72664B2000054FB2E /* WidgetKit.framework */; };
+		07622EFA2664B2000054FB2E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07622EF92664B2000054FB2E /* SwiftUI.framework */; };
+		07622EFD2664B2000054FB2E /* FlagsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07622EFC2664B2000054FB2E /* FlagsWidget.swift */; };
+		07622EFF2664B2030054FB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07622EFE2664B2030054FB2E /* Assets.xcassets */; };
+		07622F032664B2030054FB2E /* FlagsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07622EF52664B2000054FB2E /* FlagsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07622F082664B32C0054FB2E /* FlagProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031FA426634F6D00BBDEB1 /* FlagProvider.swift */; };
+		07622F092664B3470054FB2E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07031FA126634E1900BBDEB1 /* Country.swift */; };
+		07622F0B2664B3E50054FB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07031F792663499900BBDEB1 /* Assets.xcassets */; };
+		07622F0D2664BFDA0054FB2E /* SplitMix64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07622F0C2664BFDA0054FB2E /* SplitMix64.swift */; };
+		07622F0E2664BFDA0054FB2E /* SplitMix64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07622F0C2664BFDA0054FB2E /* SplitMix64.swift */; };
+		07B9067826673CF200B12F2C /* FlagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9067726673CF200B12F2C /* FlagController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +44,28 @@
 			remoteGlobalIDString = 07031F712663499800BBDEB1;
 			remoteInfo = Flags;
 		};
+		07622F012664B2030054FB2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07031F6A2663499800BBDEB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07622EF42664B2000054FB2E;
+			remoteInfo = FlagsWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07622F042664B2030054FB2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07622F032664B2030054FB2E /* FlagsWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07031F722663499800BBDEB1 /* Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +80,17 @@
 		07031F8E2663499900BBDEB1 /* FlagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07031F922663499900BBDEB1 /* FlagsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsUITests.swift; sourceTree = "<group>"; };
 		07031F942663499900BBDEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07031FA126634E1900BBDEB1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		07031FA426634F6D00BBDEB1 /* FlagProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagProvider.swift; sourceTree = "<group>"; };
+		07031FA926646BAE00BBDEB1 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		07622EF52664B2000054FB2E /* FlagsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlagsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		07622EF72664B2000054FB2E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		07622EF92664B2000054FB2E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		07622EFC2664B2000054FB2E /* FlagsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsWidget.swift; sourceTree = "<group>"; };
+		07622EFE2664B2030054FB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07622F002664B2030054FB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07622F0C2664BFDA0054FB2E /* SplitMix64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMix64.swift; sourceTree = "<group>"; };
+		07B9067726673CF200B12F2C /* FlagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +115,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07622EF22664B2000054FB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07622EFA2664B2000054FB2E /* SwiftUI.framework in Frameworks */,
+				07622EF82664B2000054FB2E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +133,8 @@
 				07031F742663499800BBDEB1 /* Flags */,
 				07031F862663499900BBDEB1 /* FlagsTests */,
 				07031F912663499900BBDEB1 /* FlagsUITests */,
+				07622EFB2664B2000054FB2E /* FlagsWidget */,
+				07622EF62664B2000054FB2E /* Frameworks */,
 				07031F732663499800BBDEB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +145,7 @@
 				07031F722663499800BBDEB1 /* Flags.app */,
 				07031F832663499900BBDEB1 /* FlagsTests.xctest */,
 				07031F8E2663499900BBDEB1 /* FlagsUITests.xctest */,
+				07622EF52664B2000054FB2E /* FlagsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +153,11 @@
 		07031F742663499800BBDEB1 /* Flags */ = {
 			isa = PBXGroup;
 			children = (
+				07B9067626673CE000B12F2C /* Controllers */,
+				07031FA826646B9700BBDEB1 /* Views */,
+				07031FA326634F5800BBDEB1 /* Providers */,
+				07031FA026634E0800BBDEB1 /* Models */,
 				07031F752663499800BBDEB1 /* FlagsApp.swift */,
-				07031F772663499800BBDEB1 /* ContentView.swift */,
 				07031F792663499900BBDEB1 /* Assets.xcassets */,
 				07031F7E2663499900BBDEB1 /* Info.plist */,
 				07031F7B2663499900BBDEB1 /* Preview Content */,
@@ -130,6 +191,59 @@
 			path = FlagsUITests;
 			sourceTree = "<group>";
 		};
+		07031FA026634E0800BBDEB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07031FA126634E1900BBDEB1 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07031FA326634F5800BBDEB1 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				07031FA426634F6D00BBDEB1 /* FlagProvider.swift */,
+				07622F0C2664BFDA0054FB2E /* SplitMix64.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		07031FA826646B9700BBDEB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07031F772663499800BBDEB1 /* ContentView.swift */,
+				07031FA926646BAE00BBDEB1 /* FlagView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07622EF62664B2000054FB2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07622EF72664B2000054FB2E /* WidgetKit.framework */,
+				07622EF92664B2000054FB2E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07622EFB2664B2000054FB2E /* FlagsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				07622EFC2664B2000054FB2E /* FlagsWidget.swift */,
+				07622EFE2664B2030054FB2E /* Assets.xcassets */,
+				07622F002664B2030054FB2E /* Info.plist */,
+			);
+			path = FlagsWidget;
+			sourceTree = "<group>";
+		};
+		07B9067626673CE000B12F2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07B9067726673CF200B12F2C /* FlagController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +254,12 @@
 				07031F6E2663499800BBDEB1 /* Sources */,
 				07031F6F2663499800BBDEB1 /* Frameworks */,
 				07031F702663499800BBDEB1 /* Resources */,
+				07622F042664B2030054FB2E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				07622F022664B2030054FB2E /* PBXTargetDependency */,
 			);
 			name = Flags;
 			productName = Flags;
@@ -186,6 +302,23 @@
 			productReference = 07031F8E2663499900BBDEB1 /* FlagsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		07622EF42664B2000054FB2E /* FlagsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07622F072664B2030054FB2E /* Build configuration list for PBXNativeTarget "FlagsWidgetExtension" */;
+			buildPhases = (
+				07622EF12664B2000054FB2E /* Sources */,
+				07622EF22664B2000054FB2E /* Frameworks */,
+				07622EF32664B2000054FB2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlagsWidgetExtension;
+			productName = FlagsWidgetExtension;
+			productReference = 07622EF52664B2000054FB2E /* FlagsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +339,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 07031F712663499800BBDEB1;
 					};
+					07622EF42664B2000054FB2E = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 07031F6D2663499800BBDEB1 /* Build configuration list for PBXProject "Flags" */;
@@ -224,6 +360,7 @@
 				07031F712663499800BBDEB1 /* Flags */,
 				07031F822663499900BBDEB1 /* FlagsTests */,
 				07031F8D2663499900BBDEB1 /* FlagsUITests */,
+				07622EF42664B2000054FB2E /* FlagsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +389,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07622EF32664B2000054FB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07622F0B2664B3E50054FB2E /* Assets.xcassets in Resources */,
+				07622EFF2664B2030054FB2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +406,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07031F782663499800BBDEB1 /* ContentView.swift in Sources */,
+				07031FA226634E1900BBDEB1 /* Country.swift in Sources */,
+				07031FA526634F6D00BBDEB1 /* FlagProvider.swift in Sources */,
+				07622F0D2664BFDA0054FB2E /* SplitMix64.swift in Sources */,
+				07031FAA26646BAE00BBDEB1 /* FlagView.swift in Sources */,
+				07B9067826673CF200B12F2C /* FlagController.swift in Sources */,
 				07031F762663499800BBDEB1 /* FlagsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +431,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07622EF12664B2000054FB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07622F0E2664BFDA0054FB2E /* SplitMix64.swift in Sources */,
+				07622F082664B32C0054FB2E /* FlagProvider.swift in Sources */,
+				07622F092664B3470054FB2E /* Country.swift in Sources */,
+				07622EFD2664B2000054FB2E /* FlagsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +454,11 @@
 			isa = PBXTargetDependency;
 			target = 07031F712663499800BBDEB1 /* Flags */;
 			targetProxy = 07031F8F2663499900BBDEB1 /* PBXContainerItemProxy */;
+		};
+		07622F022664B2030054FB2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07622EF42664B2000054FB2E /* FlagsWidgetExtension */;
+			targetProxy = 07622F012664B2030054FB2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +582,7 @@
 		07031F982663499900BBDEB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +605,7 @@
 		07031F992663499900BBDEB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +709,48 @@
 			};
 			name = Release;
 		};
+		07622F052664B2030054FB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS63W44KSD;
+				INFOPLIST_FILE = FlagsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardrobinson.Flags.FlagsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07622F062664B2030054FB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS63W44KSD;
+				INFOPLIST_FILE = FlagsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardrobinson.Flags.FlagsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +786,15 @@
 			buildConfigurations = (
 				07031F9E2663499900BBDEB1 /* Debug */,
 				07031F9F2663499900BBDEB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07622F072664B2030054FB2E /* Build configuration list for PBXNativeTarget "FlagsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07622F052664B2030054FB2E /* Debug */,
+				07622F062664B2030054FB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
